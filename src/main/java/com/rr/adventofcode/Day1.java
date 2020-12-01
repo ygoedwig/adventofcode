@@ -29,6 +29,10 @@ public class Day1 {
             int num1 = nums[i];
             for (int j = 0; j < nums.length; j++) {
                 int num2 = nums[j];
+                int p1Total = num1 + num2;
+                if (p1Total == 2020) {
+                    System.out.println(num1 + " " + num2 + " " + num1 * num2);
+                }
                 for (int k = 0; k < nums.length; k++) {
                     int num3 = nums[k];
                     int total = num1 + num2 + num3;
